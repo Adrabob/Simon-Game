@@ -85,6 +85,7 @@ $(".button").click(function(){
         $("h1").text("Level "+ level);
         nextSequence();
         started = true;
+        $(".button").text("Restart");
     }
 });
 
