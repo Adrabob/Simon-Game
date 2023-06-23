@@ -10,6 +10,7 @@ $(document).keypress(function(){
         $("h1").text("Level "+ level);
         nextSequence();
         started = true;
+        $(".button").text("Restart");
     }
 });
 
@@ -78,4 +79,14 @@ function startOver(){
     level = 0;
     started = false;
 }
+
+$(".button").click(function(){
+    if(!started){
+        $("h1").text("Level "+ level);
+        nextSequence();
+        started = true;
+    }
+});
+
+
 
